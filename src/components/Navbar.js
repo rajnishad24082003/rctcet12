@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Our_Projects from "./Our_Projects";
-import "./navbar.css";
 import "../App.css";
 function Navbar() {
   let [popUp, setPopUp] = useState("none");
@@ -12,7 +11,7 @@ function Navbar() {
   };
   return (
     <>
-      <div className=" bg-white/50">
+      <div className=" bg-white/50 max-sm:bg-white/80 md:bg-white/50">
         <div className=" flex justify-around">
           <div className="nav1ele mt-3 flex-initial">
             <img
@@ -21,7 +20,7 @@ function Navbar() {
               className="bg-white p-1 rounded-full shadow-2xl"
             />
           </div>
-          <div className="nav1ele mt-3 flex-initial">
+          <div className="nav1ele mt-3 flex-initial max-sm:hidden sm:hidden md:block">
             <img
               src="https://static.wixstatic.com/media/8f62ff_d1a38fed0bba45b08f7afaef2869cbd1~mv2.png/v1/crop/x_0,y_39,w_1000,h_172/fill/w_406,h_70,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/WhatsApp_Image_2022-08-14_at_10_53_19_PM-removebg-preview.png"
               alt="logo"
@@ -33,9 +32,34 @@ function Navbar() {
               alt="logo"
             />
           </div>
+          <div className="nav1ele text-black border-4 border-slate-100 bg-slate-100 mt-3 flex-initial max-sm:flex md:hidden  p-1  m-1">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="w-14 h-14 object-fill"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </div>
         </div>
         <div>
-          <nav className="flex justify-around p-2">
+          <div className="nav1ele mt-3 flex-initial flex max-sm:flex md:hidden justify-center">
+            <img
+              src="https://static.wixstatic.com/media/8f62ff_d1a38fed0bba45b08f7afaef2869cbd1~mv2.png/v1/crop/x_0,y_39,w_1000,h_172/fill/w_406,h_70,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/WhatsApp_Image_2022-08-14_at_10_53_19_PM-removebg-preview.png"
+              alt="logo"
+              className=""
+            />
+          </div>
+        </div>
+        <div className="">
+          <nav className=" max-sm:hidden sm:hidden md:flex justify-around p-0">
             <li className="list-none  p-2 hover:border-b-2 hover:border-black">
               Home
             </li>
