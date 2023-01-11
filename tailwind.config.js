@@ -2,15 +2,15 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    fontSize: {
-      "3xl": [
-        "4.875rem",
-        {
-          lineHeight: "2.25rem",
-          letterSpacing: "-0.02em",
-          fontWeight: "700",
+    extend: {
+      colors: {
+        regalblueby: {
+          400: "#2d776c",
         },
-      ],
+      },
+      boxShadow: {
+        aboutshadow: "10px 10px 0px -1px rgba(36,97,88,1)",
+      },
     },
   },
   plugins: [],

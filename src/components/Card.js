@@ -1,6 +1,7 @@
 import React from "react";
 
 const Card = ({ result }) => {
+  result = [1, 2, 3, 4, 5];
   if (result.length === 0) {
     return (
       <>

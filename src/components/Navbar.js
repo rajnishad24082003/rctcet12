@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Our_Projects from "./Our_Projects";
-import "../App.css";
+import { Link } from "react-router-dom";
 function Navbar() {
   let [popUp, setPopUp] = useState("none");
   let popUpFunOpen = () => {
@@ -61,7 +61,7 @@ function Navbar() {
         <div className="">
           <nav className=" max-sm:hidden sm:hidden md:flex justify-around p-0">
             <li className="list-none  p-2 hover:border-b-2 hover:border-black">
-              Home
+              <Link to={"/"}>Home</Link>
             </li>
             <li className="list-none hover:border-b-2 hover:border-black p-2 ">
               Hobby Based Clubs
