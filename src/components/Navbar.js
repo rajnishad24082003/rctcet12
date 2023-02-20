@@ -1,14 +1,6 @@
-import React, { useState } from "react";
-import Our_Projects from "./Our_Projects";
+import React from "react";
 import { Link } from "react-router-dom";
 function Navbar() {
-  let [popUp, setPopUp] = useState("none");
-  let popUpFunOpen = () => {
-    setPopUp("");
-  };
-  let popUpFunClose = () => {
-    setPopUp("none");
-  };
   return (
     <>
       <div className=" bg-white/50 max-sm:bg-white/80 md:bg-white/50">
@@ -75,12 +67,8 @@ function Navbar() {
             <li className="list-none hover:border-b-2 hover:border-black p-2">
               Upcoming Events
             </li>
-            <li
-              className="list-none hover:border-b-2 hover:border-black p-2"
-              onMouseEnter={popUpFunOpen}
-              onMouseLeave={popUpFunClose}
-            >
-              Our Projects
+            <li className="list-none hover:border-b-2 hover:border-black p-2">
+              <Link to={"our_projects"}>Our Projects</Link>
             </li>
             <li className="list-none hover:border-b-2 hover:border-black p-2">
               Club Insight
@@ -97,7 +85,6 @@ function Navbar() {
           </nav>
         </div>
       </div>
-      <Our_Projects visibleCheck={popUp}></Our_Projects>
     </>
   );
 }

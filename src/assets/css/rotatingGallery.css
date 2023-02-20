@@ -1,0 +1,51 @@
+.carouselgall {
+  padding: 20px;
+  perspective: 500px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.carouselgall > * {
+  flex: 0 0 auto;
+}
+.carouselgall .RotatingGalleryFigure {
+  margin: 0;
+  width: 400px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  transform-origin: 50% 50% -482.8427124746px;
+}
+.carouselgall .RotatingGalleryFigure img {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 40px;
+  opacity: 0.9;
+}
+.carouselgall .RotatingGalleryFigure img:not(:first-of-type) {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform-origin: 50% 50% -482.8427124746px;
+}
+.carouselgall .RotatingGalleryFigure img:nth-child(2) {
+  transform: rotateY(0.7853981634rad);
+}
+.carouselgall .RotatingGalleryFigure img:nth-child(3) {
+  transform: rotateY(1.5707963268rad);
+}
+.carouselgall .RotatingGalleryFigure img:nth-child(4) {
+  transform: rotateY(2.3561944902rad);
+}
+.carouselgall .RotatingGalleryFigure img:nth-child(5) {
+  transform: rotateY(3.1415926536rad);
+}
+.carouselgall .RotatingGalleryFigure img:nth-child(6) {
+  transform: rotateY(3.926990817rad);
+}
+.carouselgall .RotatingGalleryFigure img:nth-child(7) {
+  transform: rotateY(4.7123889804rad);
+}
+.carouselgall .RotatingGalleryFigure img:nth-child(8) {
+  transform: rotateY(5.4977871438rad);
+}

@@ -11,8 +11,10 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home></Home>}></Route>
           <Route
-            path="/our_projects/:id"
-            element={<Our_projects_page result={[1, 2, 3]}></Our_projects_page>}
+            path="/our_projects"
+            element={
+              <Our_projects_page result={[1, 2, 3, 4, 5]}></Our_projects_page>
+            }
           ></Route>
         </Routes>
         <Footer></Footer>
