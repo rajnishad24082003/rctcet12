@@ -1,0 +1,126 @@
+.close_button {
+  position: fixed;
+  top: 60px;
+  right: 60px;
+  font-size: 25px;
+}
+
+.login_outermost_container {
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  position: fixed;
+  background: rgb(255, 255, 255);
+  color: #281839;
+  font-family: "Fraunces", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 50%;
+  height: 65%;
+  top: calc(50% - 230px);
+  flex-direction: column;
+}
+
+.signup_head {
+  font-size: 48px;
+  line-height: 48px;
+  margin-bottom: 24px;
+  margin-top: 10px;
+  font-weight: 500;
+  padding-top: 0;
+  padding-bottom: 0;
+  text-align: center;
+}
+
+.already_login_container {
+  font-style: italic;
+  display: flex;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.already_mem_text {
+  font-size: 1.1rem;
+  margin: 0 4px;
+}
+
+.login_color_text {
+  color: #5ea18f;
+  float: none;
+  border: none;
+  text-align: left;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.or_linebreak {
+  text-align: center;
+  margin: 12px auto 24px;
+  height: 11px;
+  border-bottom: 1px solid;
+}
+
+.or_span {
+  font-size: 16px;
+  font-style: italic;
+  padding: 0 0.8rem;
+}
+
+.checkbox_readMore_container {
+  font-style: italic;
+  display: flex;
+  flex-direction: column;
+}
+
+.before_readmore_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup_google_container {
+  display: flex;
+  background-color: #4c98f5;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+
+.signup_google_container:hover {
+  background-color: #85bcff;
+}
+
+.signup_google {
+  line-height: 40px;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  font-family: Roboto;
+}
+
+.google_icon {
+  background-color: white;
+  width: 20px;
+}
+
+.signup_checkbox_label {
+  padding: 0 0.5rem;
+  font-size: 15px;
+}
+
+.signup_readMore_button {
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 15px;
+  font-style: normal;
+}

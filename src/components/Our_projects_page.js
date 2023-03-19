@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Menu from "./menu";
-import Calender from "./Calender";
 
 function Our_projects_page({ result }) {
   const [items, setItems] = useState(Menu);
@@ -16,7 +15,6 @@ function Our_projects_page({ result }) {
 
   return (
     <>
-      <Calender></Calender>
       <div className=" text-center font-bold text-2xl mt-3">
         <h1 className="p-4">Our Projects</h1>
       </div>

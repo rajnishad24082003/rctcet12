@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Sidebar from "./Sidebar";
 function Navbar() {
   return (
     <>
@@ -24,22 +25,12 @@ function Navbar() {
               alt="logo"
             />
           </div>
-          <div className="nav1ele text-black border-4 border-slate-100 bg-slate-100 mt-3 flex-initial max-sm:flex md:hidden  p-1  m-1">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-14 h-14 object-fill"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-              />
-            </svg>
+          <div className="hidden md:block my-auto ">
+            <button>
+              <Link to="./Login">Login </Link>
+            </button>
           </div>
+          <Sidebar></Sidebar>
         </div>
         <div>
           <div className="nav1ele mt-3 flex-initial flex max-sm:flex md:hidden justify-center">
@@ -56,31 +47,31 @@ function Navbar() {
               <Link to={"/"}>Home</Link>
             </li>
             <li className="list-none hover:border-b-2 hover:border-black p-2 ">
-              Hobby Based Clubs
+              <Link to={"/HobbyBasedClubs"}>Hobby Based Clubs</Link>
             </li>
             <li className="list-none hover:border-b-2 hover:border-black p-2">
-              Get Involved
+              <Link to={"/GetInvolved"}>Get Involved</Link>
             </li>
             <li className="list-none hover:border-b-2 hover:border-black p-2">
-              About Us
+              <Link to={"/AboutUs"}>About Us</Link>
             </li>
             <li className="list-none hover:border-b-2 hover:border-black p-2">
-              Upcoming Events
+              <Link to={"/UpcomingEvents"}>Upcoming Events</Link>
             </li>
             <li className="list-none hover:border-b-2 hover:border-black p-2">
-              <Link to={"our_projects"}>Our Projects</Link>
+              <Link to={"/OurProjects"}>Our Projects</Link>
             </li>
             <li className="list-none hover:border-b-2 hover:border-black p-2">
-              Club Insight
+              <Link to={"/ClubInsight"}>Club Insight</Link>
             </li>
             <li className="list-none hover:border-b-2 hover:border-black p-2">
-              Contact
+              <Link to={"/Contact"}>Contact</Link>
             </li>
             <li className="list-none hover:border-b-2 hover:border-black p-2">
-              Members
+              <Link to={"/Members"}>Members</Link>
             </li>
             <li className="list-none hover:border-b-2 hover:border-black p-2">
-              Meet the Team
+              <Link to={"/MeetTheTeam"}>Meet the Team</Link>
             </li>
           </nav>
         </div>
